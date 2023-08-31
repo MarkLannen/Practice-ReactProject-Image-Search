@@ -1,6 +1,13 @@
 import React from "react";
-const SearchBar = () => {
-    return <div>SearchBar
+const SearchBar = ({ onSubmit }) => {
+  const handleClick = () => {
+    onSubmit("cars");
+  };
+  return (
+    <div>
+      <input />
+      <button onClick={handleClick}>Click me</button>
     </div>
+  );
 };
-export default SearchBar
+export default SearchBar;
