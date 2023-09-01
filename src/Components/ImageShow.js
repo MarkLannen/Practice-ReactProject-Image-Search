@@ -1,6 +1,5 @@
 import React from "react";
-const ImageShow = () => {
-    return <div>ImageShow
-    </div>
+const ImageShow = ({ image }) => {
+  return <div>{image.id}</div>;
 };
-export default ImageShow
+export default ImageShow;
